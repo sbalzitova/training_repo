@@ -18,5 +18,5 @@ class ProductPage(BasePage):
     def should_guest_not_see_success_message(self):
         assert self.is_not_element_present(*ProductPageLocators.SUCCESS_ALERT), 'Success alert is shown'
 
-    def should_success_message_dissapper(self):
+    def should_success_message_disappear(self):
         assert self.is_disappeared(*ProductPageLocators.SUCCESS_ALERT), 'Success alert not disappeared'
